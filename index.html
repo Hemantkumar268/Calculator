@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    
+    <!-- Calculator Project -->
+
+    <div class="container-fluid d-flex vh-100 justify-content-center align-items-center">
+       <div class="calculator">
+           <!-- Calculation Result Display-->
+           <div class="display mb-4 text-end"> 
+              <div class="text-secondary fs-5 label-data" id="label-data">00</div>
+              <div class="fw-bold show-data" id="show-data">0</div>
+           </div>
+
+           <!-- Number And Operations Display -->
+            <div class="row g-2">
+                <div class="col-3">
+                  <button class="btn w-100 py-3 calc-btn" id="allClear">AC</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 calc-btn" id="delBtn">DEL</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 calc-btn show-btn"
+                     data-value="%" data-type="operator">%</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 operator-btn show-btn"
+                     data-value="÷" data-type="operator">÷</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn" 
+                       data-value="7" data-type="number" >7</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                      data-value="8" data-type="number">8</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                      data-value="9" data-type="number">9</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 operator-btn show-btn"
+                    data-value="*" data-type="operator">*</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                     data-value="4" data-type="number">4</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                     data-value="5" data-type="number">5</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                     data-value="6" data-type="number">6</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 operator-btn show-btn"
+                    data-value="-" data-type="operator">-</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                     data-value="1" data-type="number">1</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                     data-value="2" data-type="number">2</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                    data-value="3" data-type="number">3</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 operator-btn show-btn"
+                    data-value="+" data-type="operator">+</button>
+                </div>
+
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                     data-value="0" data-type="number">0</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn w-100 py-3 fs-4 calc-btn show-btn"
+                     data-value="." data-type="decimal">.</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn w-100 py-3 fs-4 equal-btn"
+                       data-value="=" data-type="equal" id="equalBtn">=</button>
+                </div>
+                
+            </div>
+       </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

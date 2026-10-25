@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background: #6b2ce8;
+   background: linear-gradient(90deg, rgba(107, 44, 232, 1) 0%, rgba(30, 79, 227, 1) 100%);
+}
+
+.calculator{
+    width: 360px;
+    max-width: 95%;
+    background: #1c1c1c;
+    color: white;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow:
+        12px 12px 24px rgba(0,0,0,0.55),
+        -8px -8px 18px rgba(255,255,255,0.04);
+}
+
+/*       =====           Btn 3D Look            =====        */
+
+.calc-btn{
+    background: linear-gradient(145deg, #3b3b3b, #2a2a2a);
+    color: #ffffff;
+    border: 1px solid #4a4a4a;
+    border-radius: 16px;
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: 600;
+     box-shadow:
+        12px 12px 24px rgba(0,0,0,0.55),
+        -6px -6px 14px rgba(255,255,255,0.03);
+    transition: all 0.15s ease;
+}
+
+.calc-btn:hover{
+    background: linear-gradient(145deg, #454545, #313131);
+    transform: translateY(-2px);
+}
+
+.calc-btn:active{
+    transform: translateY(2px);
+    box-shadow:
+        inset 4px 4px 8px rgba(0,0,0,0.5),
+        inset -2px -2px 4px rgba(255,255,255,0.05);
+}
+
+
+.operator-btn{
+    background: linear-gradient(145deg, #5b5bd6, #4343b8);
+    color: white;
+    border: 1px solid #6b6be8;
+    border-radius: 16px;
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    box-shadow:
+        6px 6px 12px rgba(0,0,0,0.45),
+        -3px -3px 8px rgba(255,255,255,0.05);
+    transition: all 0.15s ease;
+}
+
+.operator-btn:hover{
+    background: linear-gradient(145deg, #6a6ae8, #5050cc);
+    transform: translateY(-2px);
+}
+
+.operator-btn:active{
+    transform: translateY(2px);
+    box-shadow:
+        inset 4px 4px 8px rgba(0,0,0,0.45),
+        inset -2px -2px 4px rgba(255,255,255,0.05);
+}
+
+.equal-btn{
+    background: linear-gradient(145deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+}
+
+.equal-btn:active{
+    transform: translateY(2px);
+    box-shadow:
+        inset 4px 4px 8px rgba(0,0,0,0.45),
+        inset -2px -2px 4px rgba(255,255,255,0.05);
+}
+
+.control-btn{
+    background: linear-gradient(145deg, #505050, #3b3b3b);
+    color: #ffd166;
+    border: 1px solid #606060;
+}
+
+.disable{
+    background: gray;
+    color: white;
+}
+
+.show-data{
+    font-size: 3rem;
+}
